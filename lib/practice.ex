@@ -21,8 +21,8 @@ defmodule Practice do
     Practice.Factor.factor(x)
   end
 
-  def palindrome?(x) do
-     Practice.Palindrome.palindrome?(x)
+  def palindrome(x) do
+     Practice.Palindrome.palindrome(x)
   end
 
 end

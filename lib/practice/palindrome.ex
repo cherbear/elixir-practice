@@ -1,17 +1,10 @@
 defmodule Practice.Palindrome do
 
-  def palindrome?(x) do
-    x
-    |> String.split(~r/\s+/)
-   # |> remove white space
-   # |> 
-
-    # Hint:
-    # expr
-    # |> split
-    # |> tag_tokens  (e.g. [+, 1] => [{:op, "+"}, {:num, 1.0}]
-    # |> convert to postfix
-    # |> reverse to prefix
-    # |> evaluate as a stack calculator using pattern matching
+  def palindrome(x) do
+   if String.trim(String.upcase(String.reverse(x))) == String.trim(String.upcase(x)) do
+   true
+   else
+   false
+   end
   end
 end

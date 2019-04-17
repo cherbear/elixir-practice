@@ -31,4 +31,5 @@ defmodule Practice.PracticeTest do
     assert palindrome("hello") == false
     assert palindrome("Anna") == true
     assert palindrome("No lemon, no melon") == true
+  end
 end
